@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import ThemeButton from "./ThemeButton";
 
 type Props = {};
 
@@ -10,9 +11,10 @@ function Navbar({}: Props) {
         <div className="flex justify-between items-center w-full">
           <Link href={"/"}>
             <h1 className="text-2xl font-medium">
-                Ozan <span className="text-tell-500">Blog</span>
+                Ozan <span className="text-teal-500">Blog</span>
             </h1>
           </Link>
+          <ThemeButton />
         </div>
       </div>
     </div>
